@@ -1,0 +1,15 @@
+{
+  "baseUrl": ".",  
+  "compilerOptions": {
+  "module": "commonjs",
+  "esModuleInterop": true,
+  "target": "es2021",
+  "moduleResolution": "node",
+  "resolveJsonModule": true,
+  "sourceMap": true,
+  "outDir": "dist"
+},
+"lib": ["ES2021"],
+"include": ["**/*.ts", "**/*.tsx"],
+"exclude": ["node_modules", "mjs"]
+}
