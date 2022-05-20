@@ -11,14 +11,8 @@ import ffmpeg from 'fluent-ffmpeg'
     })
   }
 
-  //
-  //
-  // https://bookaudio.online/17-martin-a-clash-of-kings.html
   const browser = await createBrowser()
-  const urls = [
-    'https://bookaudio.online/37-austen-pride-and-prejudice.html',
-    'https://bookaudio.online/45-paolini-eragon.html',
-  ]
+  const urls = [process.env.BOOK1, process.env.BOOK2]
 
   try {
     // Create a new incognito browser context
